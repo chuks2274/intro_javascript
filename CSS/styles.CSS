@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  background-color: #126180;
+  min-height: 100vh;
+  color: white;
+   
+}
+/* Header section styling*/
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+ /* Header logo  styling*/
+.page-header {
+  margin: 2px;
+  padding: 2px;
+  height: 4%;
+  width: 4%;
+  float: left;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Navigation bar styling*/
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+.navbar ul li :hover {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* All image section styling*/
+.section-image {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+/* Welcome section styling*/
+
+.section-welcome {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 50px;
+  background-color: #00416a;
+}
+ /* About us section styling*/
+.about-us {
+  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+}
+
+/* Contact section styling*/
+
+.contact-section {
+  margin: 25px 10px;
+  padding: 5px 5px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+/* Location section styling*/
+.section-location {
+  margin: 20px 10px;
+  padding: 5px 5px;
+}
+
+/* About page/Table section styling*/
+.section-about {
+  margin: 20px 10px;
+  padding: 5px 5px;
+}
+/* Form section styling*/
+.form-control {
+  resize: none;
+}
+
+/* Card styling*/
+ 
+.card-title {
+  text-align: center;
+}
+.card-email {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
+}
+.card-email:hover {
+  text-decoration: underline;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.carousel-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.carousel-inner {
+  cursor: pointer;
+}
+
+/* All image styling*/
+.url {
+  display: inline-block;
+  transition: transform 0.3s ease;
+ }
+  
+ .url:hover {
+  transform: scale(1.05);
+}
+ 
+
+/* About page search bar styling*/
+.input-group {
+  flex-grow: 0;
+  flex-basis: 800px;
+}
+
+/* All the h1, h5 and p tag styling*/
+ 
+.text {
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-indent: 14px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-h {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+ 
+
+ 
