@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="d-flex flex-column vh-100">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid  ">
+        <div class="d-flex align-items-center"> 
+        <img src="./photo/1600w-eaGl0uXNSMo.webp" class="img-fluid page-header me-2" alt="Logo">
+        <a href="index.html" class="navbar-brand fs-4">Real Estate</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="rent.html" class="nav-link">Rent</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="location.html" class="nav-link">Location</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="section-welcome  text-white text-center py-5">
+    <div class="container ">
+      <h1 class="display-4">Welcome to Real Estate</h1>
+      <p class="lead">
+    We are dedicated real estate professionals in New York, assisting you with buying, selling, renting, managing, and financing properties. 
+    Our team is committed to making your property journey smooth and successful.
+  </p>
+  <a href="about.html" class="btn btn-primary mt-3">Learn More About Us</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+
+  <!-- Houses Section -->
+  <section class="houses-for-sale py-5">
+    <div class="container">
+      <h2 class="text-center text-info mb-4">Houses For Sale</h2>
+      <div class="row g-4 justify-content-center">
+
+        <!-- House Cards -->
+        <!-- Each house button will pass data to the details modal -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-binyaminmellish-106399.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>1st Ave, New York, NY 10039</p>
+              <p>$500,000 | 6 Bed | 3 Bath | 5,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-binyaminmellish-106399.jpg"
+                data-title="1st Ave, New York, NY 10039"
+                data-price="$500,000 | 6 Bed | 3 Bath | 5,000 sqft"
+                data-desc="Spacious 6-bedroom family home with modern kitchen, large backyard, and walking distance to parks and schools. Perfect for growing families seeking comfort and convenience.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-pixabay-164522.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Johnson St, Brooklyn, NY 11214</p>
+              <p>$500,000 | 6 Bed | 3 Bath | 5,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-pixabay-164522.jpg"
+                data-title="Johnson St, Brooklyn, NY 11214"
+                data-price="$500,000 | 6 Bed | 3 Bath | 5,000 sqft"
+                data-desc="Charming Brooklyn property featuring modern interiors, a spacious garage, and a beautifully landscaped garden. Close to shopping and local amenities.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-expect-best-79873-323775.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Bleecker St, New York, NY 10093</p>
+              <p>$2,000,000 | 8 Bed | 6 Bath | 6,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-expect-best-79873-323775.jpg"
+                data-title="Bleecker St, New York, NY 10093"
+                data-price="$2,000,000 | 8 Bed | 6 Bath | 6,000 sqft"
+                data-desc="Luxury 8-bedroom townhouse with high-end finishes, private terrace, and multiple living areas. Ideal for investors or large families desiring upscale urban living.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-pixabay-210617.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>E 20th St, New York, NY 10080</p>
+              <p>$400,000 | 6 Bed | 3 Bath | 5,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-pixabay-210617.jpg"
+                data-title="E 20th St, New York, NY 10080"
+                data-price="$400,000 | 6 Bed | 3 Bath | 5,000 sqft"
+                data-desc="Elegant 6-bedroom home featuring modern amenities, hardwood floors, and a welcoming living space. Perfect for families wanting a comfortable city lifestyle.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 5 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-pixabay-259685.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Broadway, New York, NY 10074</p>
+              <p>$1,000,000 | 7 Bed | 3 Bath | 6,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-pixabay-259685.jpg"
+                data-title="Broadway, New York, NY 10074"
+                data-price="$1,000,000 | 7 Bed | 3 Bath | 6,000 sqft"
+                data-desc="Beautiful 7-bedroom home with modern kitchen, spacious bedrooms, and a landscaped backyard. Close to transportation and top schools.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 6 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-pixabay-164558.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Mercer St, New York, NY 10063</p>
+              <p>$400,000 | 6 Bed | 3 Bath | 5,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-pixabay-164558.jpg"
+                data-title="Mercer St, New York, NY 10063"
+                data-price="$400,000 | 6 Bed | 3 Bath | 5,000 sqft"
+                data-desc="Spacious 6-bedroom residence featuring a modern kitchen, private patio, and bright interiors. Conveniently located near shops and public transport.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 7 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-expect-best-79873-323780.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Broadway, New York, NY 10026</p>
+              <p>$2,000,000 | 8 Bed | 3 Bath | 6,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-expect-best-79873-323780.jpg"
+                data-title="Broadway, New York, NY 10026"
+                data-price="$2,000,000 | 8 Bed | 3 Bath | 6,000 sqft"
+                data-desc="Elegant 8-bedroom property with open floor plan, large kitchen, and scenic city views. Ideal for luxury living in the heart of New York.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 8 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-secondary text-white text-center house-card">
+            <img src="./photo/pexels-scottwebb-1029599.jpg" class="card-img-top img-thumbnail" alt="Home Image">
+            <div class="card-body">
+              <h5 class="card-title">For Sale</h5>
+              <p>Macdougal St, New York, NY 10069</p>
+              <p>$300,000 | 6 Bed | 3 Bath | 5,000 sqft</p>
+              <button class="btn btn-info text-white card-btn view-details-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#houseDetailModal"
+                data-img="./photo/pexels-scottwebb-1029599.jpg"
+                data-title="Macdougal St, New York, NY 10069"
+                data-price="$300,000 | 6 Bed | 3 Bath | 5,000 sqft"
+                data-desc="Cozy 6-bedroom home with large living spaces, modern kitchen, and backyard. Perfect for families looking for an affordable option in a central location.">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- House Details Modal -->
+  <div class="modal fade" id="houseDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">House Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" alt="House Image" class="modal-img">
+          <p id="modalPrice" class="fw-bold"></p>
+          <p id="modalDesc"></p>
+          <button class="btn btn-success" id="modalContactBtn">Contact Agent</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Agent</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Message</button>
+            <div id="formSuccess" class="mt-2 text-success" style="display:none;">Message sent successfully!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark mt-auto">
+    <p class="text-white">&copy; <span id="currentYear"></span> Real Estate. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
