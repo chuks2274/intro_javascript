@@ -1,0 +1,35 @@
+name: Deploy Real-Estate to Vercel
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Optional - Run a basic syntax check (HTML/CSS/JS)
+      - name: Run basic syntax check
+        run: |
+          echo "Running basic syntax check..."
+          find . -name "*.js" -exec eslint {} \; || echo "No ESLint or skipped"
+          echo "Check complete"
+
+      # Step 3: Deploy to Vercel
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v23
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: ./   # root folder of your project
+          prod: true
