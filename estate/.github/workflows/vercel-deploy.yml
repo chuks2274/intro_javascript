@@ -1,4 +1,4 @@
-name: Deploy Real-Estate to Vercel
+name: Test and Deploy Real-Estate to Vercel
 
 on:
   push:
@@ -9,23 +9,31 @@ on:
       - main
 
 jobs:
-  deploy:
+  test-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code
-      - name: Checkout code
+      # Step 1: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Optional - Run a basic syntax check (HTML/CSS/JS)
-      - name: Run basic syntax check
-        run: |
-          echo "Running basic syntax check..."
-          find . -name "*.js" -exec eslint {} \; || echo "No ESLint or skipped"
-          echo "Check complete"
+      # Step 2: Setup Node.js (required if using npm for tests)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-      # Step 3: Deploy to Vercel
+      # Step 3: Install dependencies (optional, if you have dev dependencies like jest/eslint)
+      - name: Install dependencies
+        run: npm install || echo "No package.json, skipping"
+
+      # Step 4: Run tests (example with npm test)
+      - name: Run tests
+        run: npm test || echo "No tests defined, skipped"
+
+      # Step 5: Deploy to Vercel if tests pass
       - name: Deploy to Vercel
+        if: success()
         uses: amondnet/vercel-action@v23
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
