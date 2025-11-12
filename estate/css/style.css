@@ -326,12 +326,11 @@ nav.navbar {
 }
 
 
-
-
-
 @media (max-width: 576px) {
   .carousel-caption {
-    justify-content: flex-start; /* push content towards top */
-    padding-top: 20px;           /* extra spacing from top */
+    justify-content: flex-start; /* push content to the top */
+    padding-top: 40px;           /* extra spacing from top */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
