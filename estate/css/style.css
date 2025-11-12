@@ -1,18 +1,51 @@
+/* ===========================
+   Global Styles
+   =========================== */
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;           /* Firefox scrollbar */
+  scrollbar-color: #6c757d transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  font-family: monospace;
+  margin: 0;
+  padding: 70px 0 0 0; /* padding-top for fixed navbar */
+  font-family: 'Poppins', sans-serif;
   background-color: #126180;
   min-height: 100vh;
   color: white;
-  
-   
 }
-/* Header section styling*/
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===========================
+   Navbar / Header
+   =========================== */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar ul li :hover {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 .navbar-brand {
   color: white;
   text-decoration: none;
@@ -23,7 +56,7 @@ body {
   text-decoration: underline;
 }
 
- /* Header logo  styling*/
+/* Header logo */
 .page-header {
   margin: 2px;
   padding: 2px;
@@ -34,255 +67,12 @@ body {
   cursor: pointer;
 }
 
-/* Navigation bar styling*/
-.navbar a {
-  color: white;
-  font-weight: bold;
-}
-
- 
-
-.navbar ul li :hover {
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-/* All image section styling*/
+/* ===========================
+   Carousel / Image Sections
+   =========================== */
 .section-image {
-  margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
+  margin: 5px 10px 30px 10px;
   padding: 5px;
-}
-
-/* Welcome section styling*/
-
-.section-welcome {
-  margin-top: 30px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: #00416a;
-}
- /* About us section styling*/
-.about-us {
-  margin-bottom: 30px;
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px 5px;
-}
-
-/* Contact section styling*/
-
-.contact-section {
-  margin: 25px 10px;
-  padding: 5px 5px;
-}
-
-.team {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  cursor: pointer;
-}
-/* Location section styling*/
-.section-location {
-  margin: 20px 10px;
-  padding: 5px 5px;
-}
-
-/* About page/Table section styling*/
-.section-about {
-  margin: 20px 10px;
-  padding: 5px 5px;
-}
-/* Form section styling*/
-.form-control {
-  resize: none;
-}
-
-/* Card styling*/
- 
-.card-title {
-  text-align: center;
-}
-.card-email {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-decoration: none;
-  color: white;
-}
-.card-email:hover {
-  text-decoration: underline;
-}
-.card {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.carousel-item {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.carousel-inner {
-  cursor: pointer;
-}
-
-/* All image styling*/
-.url {
-  display: inline-block;
-  transition: transform 0.3s ease;
- }
-  
- .url:hover {
-  transform: scale(1.05);
-}
- 
-
-/* About page search bar styling*/
-.input-group {
-  flex-grow: 0;
-  flex-basis: 800px;
-}
-
-/* All the h1, h5 and p tag styling*/
- 
-.text {
-  font-size: 1em;
-  letter-spacing: 1px;
-  text-indent: 14px;
-}
-.text-bold {
-  font-weight: bold;
-}
-.text-h {
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-/* Polished look for modal and buttons */
-.modal-content {
-  border-radius: 1rem;
-  background: linear-gradient(145deg, #1b1b1b, #2a2a2a);
-}
-
-.card .btn-info {
-  transition: all 0.3s ease;
-  border-radius: 50px;
-}
-
-.card .btn-info:hover {
-  background-color: #0dcaf0;
-  color: #000;
-  transform: scale(1.05);
-}
-
-.house-card:hover {
-            transform: scale(1.03);
-            transition: all 0.3s ease-in-out;
-        }
-        .card-btn {
-            margin-top: 10px;
-        }
-        .modal-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-      .contact-section {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .contact-form {
-            max-width: 600px;
-            width: 100%;
-            color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        }
-        .contact-form label {
-            display: block;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        .contact-form .form-control {
-            text-align: center;
-        }
-        .success-message {
-            display: none;
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .success-message {
-    display: none; /* hidden by default */
-    text-align: center;
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    padding: 10px;
-    border-radius: 5px;
-}
-  
-/* ===========================
-   Modern Tiny Scrollbar
-   =========================== */
-
-/* For WebKit browsers (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 6px;          /* Thin vertical scrollbar */
-  height: 6px;         /* Thin horizontal scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;  /* Subtle track */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6c757d;  /* Soft gray thumb */
-  border-radius: 10px;        /* Rounded edges */
-  transition: background-color 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #198754;  /* Highlight color on hover (Bootstrap green) */
-}
-
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #6c757d transparent;
-}
-
-/* Optional: apply smoother scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-
-/* ===========================
-   Global Font Style
-   =========================== */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* ===== Carousel Section Styling ===== */
-.section-image {
   position: relative;
   overflow: hidden;
 }
@@ -300,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-caption {
-  
   padding: 25px 30px;
   border-radius: 10px;
 }
@@ -326,6 +115,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 2.5rem;
 }
 
+.carousel-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carousel-inner {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .carousel-caption {
     padding: 15px;
@@ -335,26 +132,206 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 350px;
   }
 }
-/* Contact form styling*/
-#contactForm button[type="submit"] {
-    display: block;
-    margin: 20px auto 0 auto; /* 20px top margin, auto left/right */
+
+/* ===========================
+   Sections: Welcome, About, Contact, Location
+   =========================== */
+.section-welcome {
+  margin: 30px 10px 5px 10px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #00416a;
 }
 
+.about-us {
+  margin: 5px 10px 30px 10px;
+  padding: 5px;
+}
 
+.section-location,
+.section-about {
+  margin: 20px 10px;
+  padding: 5px;
+}
 
+.contact-section {
+  margin: 25px 10px;
+  padding: 5px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- /* Sticky/fixed navbar */
-/* Keep navbar fixed at top */
-nav.navbar {
-  position: fixed;
-  top: 0;
+/* ===========================
+   Team / Cards
+   =========================== */
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.house-card:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-email {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
+}
+
+.card-email:hover {
+  text-decoration: underline;
+}
+
+.card .btn-info {
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.card .btn-info:hover {
+  background-color: #0dcaf0;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.card-btn {
+  margin-top: 10px;
+}
+
+/* ===========================
+   Forms
+   =========================== */
+.form-control {
+  resize: none;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
   width: 100%;
-  z-index: 1030; /* Stay on top of content */
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-/* Push the content down so it’s not hidden */
-body {
-  padding-top: 70px; /* same as navbar height */
+.contact-form label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
+#contactForm button[type="submit"] {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.success-message {
+  display: none; /* hidden by default */
+  text-align: center;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+.text {
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-indent: 14px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-h {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* ===========================
+   Misc / Images
+   =========================== */
+.url {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.url:hover {
+  transform: scale(1.05);
+}
+
+.modal-content {
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #1b1b1b, #2a2a2a);
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   Search / Input Groups
+   =========================== */
+.input-group {
+  flex-grow: 0;
+  flex-basis: 800px;
+}
+
+/* ===========================
+   Scrollbar Styling
+   =========================== */
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #198754;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    justify-content: flex-start; /* push content towards top */
+    padding-top: 20px;           /* extra spacing from top */
+  }
+}

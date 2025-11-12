@@ -1,56 +1,120 @@
-# Real Estate Project.
+# Real Estate Website
 
-## Home Page.
-Navigation bar is design to allows people to navigate or switch between pages of the website.
-Welcome section is design to welcome visitors to the website.
-About us section is design to showcase real estate mission and vission to the visitors.
-Home/building images section is to showcase the type of home/building for sale with location and amount.
-### Home Page Bootstrap.
-Row and col is to position the card/image. Container-fluid is to responsive to all screen type.
+A modern, responsive **Real Estate website** built with **HTML, CSS, JavaScript**, and **Bootstrap 5**.  
+Designed to provide users with an intuitive and interactive experience for browsing properties and contacting real estate agents.
 
-## Rent Page.
- Rent page section is to showcase types of apartment for rent with location and amount.
-### Rent Page Bootstrap.
-Row and col is to position the card/image and d-flex is to position carousel. Container-fluid is to responsive to all screen type.
+---
 
-## About Page.
-This page is to showcase real estate apartment listing with description, location, and amount.
-### About Page Bootstrap.
- mx-auto is to position the table in center. Container-fluid and table-responsive is to responsive to all screen type.
+## Live Demo
 
-## Location Page.
-This page is to showcase the address of the real estate for easy location. 
-### Location Page Bootstrap.
-Text-center is to move the address to center. Row and col is to position the card/image. Container-fluid is to responsive to all screen type.
+Check out the live demo deployed via CI/CD to Vercel:  
+[Intro JavaScript Project](https://realestate-eight-eta.vercel.app/)
 
-## Contact Page.
-This page is to make inquiry for real estate services.
-### Contact Page Bootstrap.
-Container is to position the contact us form. Row and col is to position the card/image. Container-fluid is to responsive to all screen type.
+---
 
-## CSS File.
-This is use to give margin and padding to section, style header, header logo, navigation bar, background-color, card and carousel box-shadow, and all the h1, h5 and p tag.
+## GitHub Repository
 
-# Javascript File.
+[Intro JavaScript Project](https://github.com/chuks2274/intro_javascript.git)
 
-## Function contactUs().
-This function is to generate greeting for user. 
-## Function validateEmail().
-This function is to validate email.
-## Function printClick().
-This function is to click button.
-## Function getRamdomApartment().
-This function is apartment random picker.
-## Const mortgageCalculator.
-This arrow function is mortgage calculator.
-## Function saleCommission().
-This function is sale commission calculator.
-## Const monthlyRent.
-This arrow function is one month rent, one month deposit, and one month
-agent commission calculator for new tenant.
+---
 
-# Project Purpose.
-This project is design to showcase real estate services for people looking for real estate needs for personal and business. The website is easy and friendly to use to all visitors.
+## Benefits to Users
 
-# Contributing:
-I am open to any feedback or contribution to this project.
+### 1. Easy Property Browsing
+- Quickly explore property listings using **house cards** with images, prices, and descriptions.
+- **Dynamic modals** allow users to view detailed information without leaving the page.
+
+### 2. Quick Access to Information
+- Contact forms enable users to directly inquire about properties or services.
+- Location section and Google Maps integration make it easy to find offices or properties.
+
+### 3. Interactive User Experience
+- Smooth **carousel slideshows** showcase properties visually.
+- **Hover effects** and interactive buttons make navigation engaging.
+
+### 4. Responsive & Mobile-Friendly
+- Works seamlessly across **desktop, tablet, and mobile devices**.
+- Users can interact with the website from any device, anytime.
+
+### 5. Time-Saving Features
+- Dropdowns allow users to filter interests (e.g., Buying, Renting).
+- Modals and dynamic content eliminate unnecessary page navigation.
+
+### 6. Accessibility and Usability
+- Focus management and ARIA-friendly modals ensure users with assistive technologies can navigate the site.
+- Smooth scrolling and clear typography improve readability.
+
+### 7. Real-Time Feedback
+- Contact forms display **instant success messages** after submission.
+- Users immediately know their inquiry has been received.
+
+### 8. Modern Design
+- Clean, professional layout using **Bootstrap 5** and Google Fonts.
+- Visually appealing design builds trust and encourages engagement.
+
+---
+
+## Project Pages
+
+### 1. Home Page
+- **Welcome Section:** Introduces the company.
+- **Houses Section:** Displays house cards with images and details.
+- **House Details Modal:** Shows detailed info when "View Details" is clicked.
+- **Contact Modal:** Allows users to contact agents.
+- **Responsive Navbar** and Footer.
+
+### 2. Rent Page
+- **Apartments Carousel:** Highlights featured rental properties.
+- **Rental Listings:** Cards showing apartments with images, addresses, prices, and room details.
+- **House Details Modal** and **Contact Modal**.
+- Fully responsive layout.
+
+### 3. About Page
+- Information about the company, vision, and team members.
+- **Meet Our Team Section:** Interactive profile modals for each member.
+- Fully responsive and visually appealing.
+
+### 4. Contact Page
+- Contact form collecting:
+  - Name, email, phone, interest type, and comments.
+- Form validation and success messages.
+- Front-end only (no backend integration).
+
+### 5. Location Page
+- Office address, contact details, and Google Maps integration.
+- Fully responsive and accessible.
+
+---
+
+## Features
+
+- **Responsive Design:** Works across all devices.
+- **Dynamic Modals:** House and team detail modals.
+- **Contact Forms:** With success messages and input reset.
+- **Interactive Dropdowns:** Works with select inputs and button-style dropdowns.
+- **Bootstrap Integration:** Professional styling and responsive layout.
+- **Accessibility:** ARIA-friendly modals and focus management.
+- **CI/CD Workflow:** Automated linting and deployment to Vercel on push to `main`.
+
+---
+
+## Technologies Used
+
+- **HTML5**  
+- **CSS3**  
+- **Bootstrap 5**  
+- **JavaScript (ES6+)**  
+- **Google Fonts (Poppins)**  
+- **Jest & Testing Library** for unit tests  
+- **Vercel** for hosting and CI/CD  
+- **GitHub Actions** for automated deployment
+
+---
+
+## Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/chuks2274/intro_javascript.git
+cd intro_javascript

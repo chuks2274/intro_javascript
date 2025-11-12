@@ -16,13 +16,33 @@ const modalPrice = document.getElementById('modalPrice');
 const modalDesc = document.getElementById('modalDesc');
 const modalContactBtn = document.getElementById('modalContactBtn');
 
-
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('currentYear');
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
     }
-  });
+
+    // ----------------------
+    // Blur modal close buttons to prevent ARIA warnings
+    // ----------------------
+    document.querySelectorAll('[data-bs-dismiss="modal"]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            if (document.activeElement) document.activeElement.blur();
+        });
+    });
+
+    // ----------------------
+    // Ensure focus is safe after modal hides
+    // ----------------------
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach((modal) => {
+        modal.addEventListener('hidden.bs.modal', () => {
+            const safeFocus = document.querySelector('header, main, body');
+            if (safeFocus) safeFocus.focus();
+        });
+    });
+});
+
 // ----------------------
 // Populate House Details Modal when "View Details" is clicked
 // ----------------------
@@ -131,5 +151,4 @@ if (dropdownButton) {
       console.log(`User selected: ${item.textContent}`);
     });
   });
-
 }
